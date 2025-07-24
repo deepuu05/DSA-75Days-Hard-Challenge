@@ -70,6 +70,21 @@ public class LinkedList {
 
   }
 
+  public void reverseLL(){
+    Node current = head;
+    Node prev = null;
+    Node nextPtr = null;
+    while (current!=null) {
+        nextPtr = current.next;
+        current.next = prev;
+        prev = current;
+        current = nextPtr;
+        
+    }
+    head = prev;
+    return;
+  }
+
     public void displayLL(){
         Node current =head;
         while(current!=null){
@@ -93,7 +108,9 @@ public class LinkedList {
          System.out.println();
          System.out.println("deletion in a linked list");
 
-        list.deleteNode(3);
+        // list.deleteNode(3);
+        list.reverseLL();
+        System.out.println("reversel is :");
         list.displayLL();
     }
 }
