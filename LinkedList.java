@@ -85,6 +85,19 @@ public class LinkedList {
     return;
   }
 
+  // reversal of linked list using recursion
+  public void reverseRecLL(Node curr, Node prev){
+
+    if(curr.next==null){
+        head = curr;
+        curr.next = prev;
+        return;
+    }
+    Node nextPtr = curr.next;
+    curr.next = prev;
+    reverseRecLL(nextPtr, curr);
+  }
+
     public void displayLL(){
         Node current =head;
         while(current!=null){
@@ -109,7 +122,8 @@ public class LinkedList {
          System.out.println("deletion in a linked list");
 
         // list.deleteNode(3);
-        list.reverseLL();
+        // list.reverseLL();
+        list.reverseRecLL(list.head, null);
         System.out.println("reversel is :");
         list.displayLL();
     }
