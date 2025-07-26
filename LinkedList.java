@@ -98,6 +98,18 @@ public class LinkedList {
     reverseRecLL(nextPtr, curr);
   }
 
+
+  // implemention of finding the middle node in a linked list
+  public void findMiddleNode(){
+    Node slow=head;
+    Node fast =head;
+    while(fast!=null && fast.next!=null){
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+     System.out.println("Middle data of a given linked lis is :"+slow.data);
+  }
+
     public void displayLL(){
         Node current =head;
         while(current!=null){
@@ -110,8 +122,12 @@ public class LinkedList {
          list.insertAtEnd(2);
          list.insertAtEnd(4);
          list.insertAtEnd(6);
+         list.insertAtEnd(8);
+         list.insertAtEnd(12);
+         
          System.out.println("Before insertion of new element");
          list.displayLL();
+         list.findMiddleNode();
          System.out.println();
          list.insertAtEnd(10);
          System.out.println("after insertion of new element");
@@ -126,5 +142,6 @@ public class LinkedList {
         list.reverseRecLL(list.head, null);
         System.out.println("reversel is :");
         list.displayLL();
+        
     }
 }
