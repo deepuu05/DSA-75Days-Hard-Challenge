@@ -99,7 +99,7 @@ public class LinkedList {
   }
 
 
-  // implemention of finding the middle node in a linked list
+  // implemention of finding  middle data in a linked list
   public void findMiddleNode(){
     Node slow=head;
     Node fast =head;
@@ -110,6 +110,28 @@ public class LinkedList {
      System.out.println("Middle data of a given linked lis is :"+slow.data);
   }
 
+  // implemention of cycle detection in a linked list
+  // floyd's cycle detection algorithm
+
+  public void cycleDetect(){
+    Node slow = head,fast= head;
+    
+    int flag =0;
+    while(slow!=null && fast != null && fast.next!= null){
+        slow = slow.next;
+        fast = fast.next.next;
+        if(slow==fast){
+            flag = 1;
+            break;
+        }   
+    }
+    if(flag==0){
+        System.out.println("no cycle detect in linked list");
+    }
+    else{
+        System.out.println("cycle detected");
+    }
+  }
     public void displayLL(){
         Node current =head;
         while(current!=null){
@@ -142,6 +164,12 @@ public class LinkedList {
         list.reverseRecLL(list.head, null);
         System.out.println("reversel is :");
         list.displayLL();
-        
+
+        Node temp = list.head;
+        while(temp.next!=null){
+            temp = temp.next;
+        }
+        temp.next = list.head;
+        list.cycleDetect();
     }
 }
