@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LargestRectangleHistogram",
+            "request": "launch",
+            "mainClass": "LargestRectangleHistogram",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "ValidStringStack",
+            "request": "launch",
+            "mainClass": "ValidStringStack",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
             "name": "LinkedList",
             "request": "launch",
             "mainClass": "LinkedList",
