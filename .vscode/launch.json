@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NearestSmaller",
+            "request": "launch",
+            "mainClass": "NearestSmaller",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "QueueUsingStack",
+            "request": "launch",
+            "mainClass": "QueueUsingStack",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "TwoStacks",
+            "request": "launch",
+            "mainClass": "TwoStacks",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "DeleteMid",
+            "request": "launch",
+            "mainClass": "DeleteMid",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "PostfixToPrefix",
+            "request": "launch",
+            "mainClass": "PostfixToPrefix",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
             "name": "LargestRectangleHistogram",
             "request": "launch",
             "mainClass": "LargestRectangleHistogram",
