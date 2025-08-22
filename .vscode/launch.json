@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CorrrectBracket",
+            "request": "launch",
+            "mainClass": "CorrrectBracket",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
             "name": "NearestSmaller",
             "request": "launch",
             "mainClass": "NearestSmaller",
