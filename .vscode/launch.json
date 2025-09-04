@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CoinChange",
+            "request": "launch",
+            "mainClass": "CoinChange",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "OptStrategyGame",
+            "request": "launch",
+            "mainClass": "OptStrategyGame",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "MatrixChain",
+            "request": "launch",
+            "mainClass": "MatrixChain",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "KnapSack",
+            "request": "launch",
+            "mainClass": "KnapSack",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
+            "name": "EggDrop",
+            "request": "launch",
+            "mainClass": "EggDrop",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
             "name": "CorrrectBracket",
             "request": "launch",
             "mainClass": "CorrrectBracket",
