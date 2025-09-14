@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pattern",
+            "request": "launch",
+            "mainClass": "Pattern",
+            "projectName": "DSA365_3a4da482"
+        },
+        {
+            "type": "java",
             "name": "CoinChange",
             "request": "launch",
             "mainClass": "CoinChange",
